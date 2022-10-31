@@ -1,6 +1,6 @@
 namespace RoleplayGame.Items
 {
-    public class TimeGem : IAttackItem, IDefenseItem
+    public class TimeGem : IGem
     {
         public int AttackPower
         {
