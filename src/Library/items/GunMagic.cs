@@ -12,7 +12,7 @@ namespace RoleplayGame.Items
         /// El poder de ataque
         /// </summary>
         /// <value></value>
-        public int AttackPowerMagicGun
+        public int AttackPower
         {
             get
             {
