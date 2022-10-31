@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Gun. Permite atacar.
     /// </summary>
-    public class GunMagic : Magic
+    public class GunMagic : IAttackItem
     {
 
         Gun arma=new Gun();
