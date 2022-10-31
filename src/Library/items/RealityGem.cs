@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Gema de la realidad. Permite atacar y defensa.
     /// </summary>
-    public class RealityGem : IAttackItem, IDefenseItem
+    public class RealityGem : IGem
     {
         /// <summary>
         /// El poder de ataque

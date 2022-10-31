@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Gema del poder. Permite atacar y defensa.
     /// </summary>
-    public class PowerGem : IAttackItem, IDefenseItem
+    public class PowerGem : IGem
     {
         /// <summary>
         /// El poder de ataque

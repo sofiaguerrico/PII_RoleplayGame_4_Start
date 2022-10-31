@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// SpaceGem. Gema del espacio. Da ataque y defensa.
     /// </summary>
-    public class SpaceGem : IAttackItem, IDefenseItem
+    public class SpaceGem : IGem
     {
         /// <summary>
         /// El poder de ataque.

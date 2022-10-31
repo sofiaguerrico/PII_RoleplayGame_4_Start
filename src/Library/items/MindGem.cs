@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// MindGem. Gema de la mente. Da ataque y defensa.
     /// </summary>
-    public class MindGem : IAttackItem, IDefenseItem
+    public class MindGem : IGem
     {
         /// <summary>
         /// El poder de ataque.

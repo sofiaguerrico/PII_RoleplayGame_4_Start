@@ -1,21 +1,21 @@
+using System.Collections.Generic;
+using System.Linq;
 namespace RoleplayGame.Items
 {
     public class InfinityGauntlet : IAttackItem, IDefenseItem
     {
-        
-        SoulGem SoulGem = new SoulGem();
-        TimeGem TimeGem = new TimeGem();
-        PowerGem PowerGem = new PowerGem();
-        SpaceGem SpaceGem = new SpaceGem();
-        RealityGem RealityGem = new RealityGem();
-        MindGem MindGem = new MindGem();
+        List<IGem> GemList = new List<IGem>();
+
+        public void EquipGem(IGem gem)
+        {
+            GemList.Add(gem);
+        }
 
         public int AttackPower
         {
             get
             {
-                return  SoulGem.AttackPower + TimeGem.AttackPower + PowerGem.AttackPower + 
-                        SpaceGem.AttackPower + RealityGem.AttackPower + MindGem.AttackPower;
+                return  GemList.Sum(gem => gem.AttackPower);
             }
         }
 
@@ -23,8 +23,7 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return  SoulGem.DefensePower + TimeGem.DefensePower + PowerGem.DefensePower + 
-                        SpaceGem.DefensePower + RealityGem.DefensePower + MindGem.DefensePower;
+                return  GemList.Sum(gem => gem.DefensePower);
             }
         }
 
@@ -32,6 +31,5 @@ namespace RoleplayGame.Items
         {
             return "InfinityGauntlet";
         }
-    }
-    
+    }   
 }
