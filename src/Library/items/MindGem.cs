@@ -32,7 +32,7 @@ namespace RoleplayGame.Items
 
          public override string ToString()
         {
-            return "SpaceGem";
+            return "MindGem";
         }
     }
 }
