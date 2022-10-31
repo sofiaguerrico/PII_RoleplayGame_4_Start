@@ -1,15 +1,15 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Espada medieval. Permite atacar a los rivales sacandoles mucho daño.
+    /// Espada medieval mágica. Permite atacar a los rivales sacandoles mucho daño.
     /// </summary>
-    public class MagicalMedievalSword : Magic
+    public class MagicalMedievalSword : IAttackItem
     {
         /// <summary>
         /// Necesito agarrar de un objeto de tipo MedievalSword el AttackPower.
         /// </summary>
         MedievalSword MSword = new MedievalSword();
-        
+
         /// <summary>
         /// Necesito agarrar de un objeto de tipo Magic el AttackPower.
         /// </summary>
@@ -19,9 +19,8 @@ namespace RoleplayGame.Items
         /// El poder de ataque.
         /// </summary>
         /// <value></value>
-        public int AttackPowerMagic
-        {
-             
+        public int AttackPower
+        {    
             get
             {
                 return  MSword.AttackPower + MMSword.AttackPower ;
